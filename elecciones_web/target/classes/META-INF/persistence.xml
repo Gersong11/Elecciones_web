@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="elecciones_web" transaction-type="RESOURCE_LOCAL">
+		<class>elecciones_model.model.Candidato</class>
+		<class>elecciones_model.model.Eleccion</class>
+		<class>elecciones_model.model.Estamento</class>
+		<class>elecciones_model.model.Tipodocumento</class>
+		<class>elecciones_model.model.Votante</class>
+		<class>elecciones_model.model.Voto</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://queenie.db.elephantsql.com/mnjgxshj"/>
+			<property name="javax.persistence.jdbc.user" value="mnjgxshj"/>
+			<property name="javax.persistence.jdbc.password" value="Uzjqo00sxV0W9OzPEB1q3wpoVvGMbbUV"/>
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect" />
+		</properties>
+	</persistence-unit>
+</persistence>
